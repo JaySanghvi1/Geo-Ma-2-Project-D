@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Financial Smart Zone — The Pocket-Money Blueprint | Station D</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="hero" aria-labelledby="project-title">
+      <p class="eyebrow">Birla High School Class IX · Social Science (Economics)</p>
+      <h1 id="project-title">The Financial Smart Zone — The Pocket-Money Blueprint</h1>
+      <p class="subtitle">Station D: Producing Budget (Class IX School Fest Simulation)</p>
+      <p class="hero-text">
+        A producing budget is a planning sheet that estimates how much money a project can earn and spend before it begins.
+        For a school fest, it helps Class IX decide smartly, avoid overspending, and aim for a healthy surplus.
+      </p>
+    </header>
+
+    <main class="layout">
+      <section class="card" aria-labelledby="budget-heading">
+        <div class="section-head">
+          <h2 id="budget-heading">Interactive School-Fest Budget (₹)</h2>
+          <p>Edit quantity and rate to test your plan. Amount = Quantity × Rate.</p>
+        </div>
+
+        <div class="table-block">
+          <h3>Income</h3>
+          <table>
+            <caption class="sr-only">Income table with editable quantity and rate in rupees</caption>
+            <thead>
+              <tr>
+                <th scope="col">Source</th>
+                <th scope="col">Qty</th>
+                <th scope="col">Rate (₹)</th>
+                <th scope="col">Amount (₹)</th>
+              </tr>
+            </thead>
+            <tbody id="income-body"></tbody>
+          </table>
+          <p class="total" id="income-total" aria-live="polite">Total Income: ₹0</p>
+        </div>
+
+        <div class="table-block">
+          <h3>Expenses</h3>
+          <table>
+            <caption class="sr-only">Expense table with fixed and variable cost types and editable values</caption>
+            <thead>
+              <tr>
+                <th scope="col">Item</th>
+                <th scope="col">Type</th>
+                <th scope="col">Qty</th>
+                <th scope="col">Rate (₹)</th>
+                <th scope="col">Amount (₹)</th>
+              </tr>
+            </thead>
+            <tbody id="expense-body"></tbody>
+          </table>
+          <p class="total" id="expense-total" aria-live="polite">Total Expense: ₹0</p>
+        </div>
+
+        <div class="balance" id="balance" aria-live="polite"></div>
+      </section>
+
+      <section class="card" aria-labelledby="cost-heading">
+        <h2 id="cost-heading">Fixed vs Variable Costs</h2>
+        <p>
+          <strong>Fixed costs</strong> stay almost same (like stage setup). <strong>Variable costs</strong> change with crowd size
+          (like food packets).
+        </p>
+        <div class="bars" role="img" aria-label="Visual comparison of fixed and variable costs">
+          <div>
+            <p id="fixed-label">Fixed: ₹0</p>
+            <div class="bar-track"><div class="bar fixed" id="fixed-bar"></div></div>
+          </div>
+          <div>
+            <p id="variable-label">Variable: ₹0</p>
+            <div class="bar-track"><div class="bar variable" id="variable-bar"></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card" aria-labelledby="steps-heading">
+        <h2 id="steps-heading">How to Build a Smart Fest Budget (Class IX)</h2>
+        <ol>
+          <li>Set your goal: safe, fun, and affordable fest.</li>
+          <li>List expected income sources and realistic rates.</li>
+          <li>Separate fixed and variable expenses before deciding final plans.</li>
+          <li>Add a small buffer for surprises (rain, low crowd, repair needs).</li>
+          <li>Check opportunity cost: choosing one extra cost means giving up another use of money.</li>
+          <li>Use cost-control ideas: compare suppliers, borrow reusable items, and avoid waste.</li>
+        </ol>
+        <p class="note">
+          Assumptions used here: this is a one-day school fest simulation, prices are sample estimates, and all figures are for learning.
+        </p>
+      </section>
+
+      <section class="card" aria-labelledby="prompts-heading">
+        <h2 id="prompts-heading">Prompt Bank (tap to copy)</h2>
+        <p>Use these prompts for investigation, checking, design, presentation, and viva practice.</p>
+        <ul class="prompt-list" id="prompt-list"></ul>
+      </section>
+
+      <section class="card" aria-labelledby="viva-heading">
+        <h2 id="viva-heading">Roles and Viva Expectations</h2>
+        <ul>
+          <li><strong>Finance Analyst:</strong> verify all totals, surplus/deficit, and assumptions.</li>
+          <li><strong>Researchers:</strong> collect price references and explain why assumptions are reasonable.</li>
+          <li><strong>Designers:</strong> keep charts clear, readable, and audience-friendly.</li>
+          <li><strong>Tech Integrator:</strong> ensure calculator works and QR explanation opens correctly.</li>
+          <li><strong>Presenter:</strong> explain station flow and answer follow-up questions with confidence.</li>
+        </ul>
+        <p>In viva, every member should explain the full station, not only their own role.</p>
+      </section>
+
+      <section class="card caution" aria-label="Safety and source note">
+        <h2>Source & Safety Note</h2>
+        <p>
+          This is a simulated educational budget for a Class IX school-fest activity. Use sample values and research-based assumptions.
+          Do <strong>not</strong> share real pocket-money details or family financial information.
+        </p>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
